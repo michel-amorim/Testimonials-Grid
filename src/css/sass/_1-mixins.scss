@@ -1,0 +1,54 @@
+@mixin h($size) {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  @if $size == 2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  // H3
+  @else if $size == 3 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+}
+
+@mixin p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+@mixin structure {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jaenette patrick patrick kira";
+  margin: 0 auto;
+  max-width: 1440px;
+  gap: 24px 30px;
+}
+
+@mixin content-structure {
+  padding: 30px;
+}
+
+@mixin border($size) {
+  @if $size == 50 {
+    border-radius: 50%;
+  } @else if $size == 7 {
+    border-radius: 7px;
+  }
+}
+
+@mixin d($size) {
+  @if $size == l {
+    @media screen and (min-width: $l-device) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (max-width: $l-device) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+/* line 1, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+button,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  scroll-behavior: smooth; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 92, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+/* line 105, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 108, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+ol,
+ul {
+  list-style: none; }
+
+/* line 112, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+blockquote,
+q {
+  quotes: none; }
+
+/* line 116, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none; }
+
+/* line 123, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 128, D:/Testimonials-Grid/src/css/sass/_reset.scss */
+a {
+  text-decoration: none; }
+
+/* line 1, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 7, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+body {
+  background: #cfcfcf; }
+
+/* line 11, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+h2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem; }
+
+/* line 15, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 2rem; }
+
+/* line 19, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1rem;
+  line-height: 1rem; }
+
+/* line 23, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+img {
+  border-radius: 50%; }
+
+/* line 27, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.structure {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "daniel daniel jonathan kira" "jaenette patrick patrick kira";
+  margin: 0 auto;
+  max-width: 1440px;
+  gap: 24px 30px; }
+
+/* line 31, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.content-structure {
+  padding: 30px;
+  border-radius: 7px; }
+
+/* line 36, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.flex {
+  display: flex; }
+
+/* line 43, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.daniel h2,
+.daniel h3,
+.daniel p,
+.jonathan h2,
+.jonathan h3,
+.jonathan p,
+.patrick h2,
+.patrick h3,
+.patrick p {
+  color: white; }
+
+/* line 50, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.daniel {
+  grid-area: daniel;
+  background: #7541c8; }
+
+/* line 55, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.jonathan {
+  grid-area: jonathan;
+  background: #48556a; }
+
+/* line 60, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.kira,
+.jaenette {
+  background: white; }
+  /* line 63, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+  .kira h2,
+  .kira h3,
+  .kira p,
+  .jaenette h2,
+  .jaenette h3,
+  .jaenette p {
+    color: #19212e; }
+
+/* line 70, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.kira {
+  grid-area: kira; }
+
+/* line 74, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.jaenette {
+  grid-area: jaenette; }
+
+/* line 78, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+.patrick {
+  grid-area: patrick;
+  background: #19212e; }
+
+/*# sourceMappingURL=import.css.map */

@@ -1,0 +1,81 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background: $light-gray;
+}
+
+h2 {
+  @include h(2);
+}
+
+h3 {
+  @include h(3);
+}
+
+p {
+  @include p;
+}
+
+img {
+  @include border(50);
+}
+
+.structure {
+  @include structure;
+}
+
+.content-structure {
+  @include content-structure;
+  @include border(7);
+}
+
+.flex {
+  display: flex;
+}
+
+.daniel,
+.jonathan,
+.patrick {
+  h2,
+  h3,
+  p {
+    color: $white;
+  }
+}
+
+.daniel {
+  grid-area: daniel;
+  background: $moderate-violet;
+}
+
+.jonathan {
+  grid-area: jonathan;
+  background: $very-dark-grayish-blue;
+}
+
+.kira,
+.jaenette {
+  background: $white;
+  h2,
+  h3,
+  p {
+    color: $very-dark-blackish-blue;
+  }
+}
+
+.kira {
+  grid-area: kira;
+}
+
+.jaenette {
+  grid-area: jaenette;
+}
+
+.patrick {
+  grid-area: patrick;
+  background: $very-dark-blackish-blue;
+}
