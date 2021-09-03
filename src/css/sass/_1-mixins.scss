@@ -1,21 +1,21 @@
 @mixin h($size) {
   font-family: "Barlow Semi Condensed", sans-serif;
   @if $size == 2 {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     line-height: 2rem;
+    margin-bottom: 20px;
   }
 
   // H3
   @else if $size == 3 {
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 1.3rem;
   }
 }
 
 @mixin p {
   font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
 }
 
 @mixin structure {

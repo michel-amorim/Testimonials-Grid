@@ -6,6 +6,7 @@
 
 body {
   background: $light-gray;
+  padding: 50px 50px;
 }
 
 h2 {
@@ -22,6 +23,7 @@ p {
 
 img {
   @include border(50);
+  width: 100%;
 }
 
 .structure {
@@ -33,8 +35,35 @@ img {
   @include border(7);
 }
 
+.bg-absolute {
+  width: 150px;
+  z-index: -1;
+  position: absolute;
+  top: 0%;
+  right: 6%;
+  .bg {
+    border-radius: 0;
+    width: 100%;
+    border: 0 solid;
+  }
+}
+
 .flex {
   display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.rows {
+  margin-left: 20px;
+}
+
+.opacity-50 {
+  opacity: 50%;
+}
+
+.opacity-70 {
+  opacity: 70%;
 }
 
 .daniel,
@@ -48,13 +77,21 @@ img {
 }
 
 .daniel {
+  position: relative;
+  z-index: 2;
   grid-area: daniel;
   background: $moderate-violet;
+  img {
+    border: 3px solid #a57bd5;
+  }
 }
 
 .jonathan {
   grid-area: jonathan;
   background: $very-dark-grayish-blue;
+  .p-jonathan {
+    max-width: 90%;
+  }
 }
 
 .kira,
@@ -69,13 +106,25 @@ img {
 
 .kira {
   grid-area: kira;
+  .p-kira {
+    max-width: 90%;
+  }
 }
 
 .jaenette {
   grid-area: jaenette;
+  h2 {
+    max-width: 85%;
+  }
 }
 
 .patrick {
   grid-area: patrick;
   background: $very-dark-blackish-blue;
+  img {
+    border: 3px solid #6c509a;
+  }
+  .p-patrick {
+    max-width: 97%;
+  }
 }
