@@ -1,7 +1,6 @@
 ## Sobre o projeto
 
-Aplicação Frontend web e mobile contruída por mim, com intuito de treinar minhas habilidades HTML e CSS e SASS.
-
+Aplicação Frontend web e mobile contruída por mim, com intuito de treinar minhas habilidades com display Grid.
 Layout do site de desafios [Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
 
 A aplicação consiste em uma area de testemunhos, onde é possivel ter o primeiro contato com clientes já contemplados com o serviço.
