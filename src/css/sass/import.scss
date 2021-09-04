@@ -1,6 +1,13 @@
+// variables and mixins
 @import "0-variables";
 @import "1-mixins";
+
+// typography
 @import "1-typography";
-@import "reset";
-@import "3-structure";
+
+// reset and global
+@import "3-reset";
 @import "3-global";
+
+// site structure
+@import "4-structure";

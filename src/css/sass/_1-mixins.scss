@@ -1,3 +1,4 @@
+// media query
 @mixin d($size) {
   @if $size == l {
   } @else if $size == m {
@@ -7,6 +8,7 @@
   }
 }
 
+// h2, h2 mobile and h3
 @mixin h($size) {
   font-family: "Barlow Semi Condensed", sans-serif;
   @if $size == 2 {
@@ -24,16 +26,17 @@
   }
 }
 
+// paragraph
 @mixin p {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: 1.1rem;
   line-height: 1.5rem;
 }
 
+// structure Grid desktop and mobile
 @mixin structure {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-areas:
     "daniel daniel jonathan kira"
     "jaenette patrick patrick kira";
@@ -42,17 +45,22 @@
   gap: 24px 30px;
 
   @include d(m) {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: space-around;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "daniel"
+      "jonathan"
+      "jaenette"
+      "patrick"
+      "kira";
   }
 }
 
+// content space
 @mixin content-structure {
   padding: 30px;
 }
 
+// netting edge and more or less round
 @mixin border($size) {
   @if $size == 50 {
     border-radius: 50%;
