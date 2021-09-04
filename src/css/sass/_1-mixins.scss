@@ -1,3 +1,12 @@
+@mixin d($size) {
+  @if $size == l {
+  } @else if $size == m {
+    @media screen and (max-width: $m-device) {
+      @content;
+    }
+  }
+}
+
 @mixin h($size) {
   font-family: "Barlow Semi Condensed", sans-serif;
   @if $size == 2 {
@@ -5,8 +14,11 @@
     line-height: 2rem;
     margin-bottom: 20px;
   }
-
-  // H3
+  @if $size == mobi {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+  //
   @else if $size == 3 {
     font-size: 1.3rem;
   }
@@ -21,12 +33,20 @@
 @mixin structure {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "daniel daniel jonathan kira"
     "jaenette patrick patrick kira";
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: $l-device;
   gap: 24px 30px;
+
+  @include d(m) {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @mixin content-structure {
@@ -38,17 +58,5 @@
     border-radius: 50%;
   } @else if $size == 7 {
     border-radius: 7px;
-  }
-}
-
-@mixin d($size) {
-  @if $size == l {
-    @media screen and (min-width: $l-device) {
-      @content;
-    }
-  } @else if $size == m {
-    @media screen and (max-width: $l-device) {
-      @content;
-    }
   }
 }

@@ -1,31 +1,3 @@
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-body {
-  background: $light-gray;
-  padding: 50px 50px;
-}
-
-h2 {
-  @include h(2);
-}
-
-h3 {
-  @include h(3);
-}
-
-p {
-  @include p;
-}
-
-img {
-  @include border(50);
-  width: 100%;
-}
-
 .structure {
   @include structure;
 }
@@ -40,7 +12,12 @@ img {
   z-index: -1;
   position: absolute;
   top: 0%;
-  right: 6%;
+  right: 0;
+  transform: translateX(-40px);
+  @include d(m) {
+    width: 145px;
+    transform: translateX(-20px);
+  }
   .bg {
     border-radius: 0;
     width: 100%;
@@ -52,6 +29,9 @@ img {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  @include d(m) {
+    margin-bottom: 10px;
+  }
 }
 
 .rows {
@@ -92,6 +72,9 @@ img {
   .p-jonathan {
     max-width: 90%;
   }
+  @include d(m) {
+    max-width: 100%;
+  }
 }
 
 .kira,
@@ -106,8 +89,8 @@ img {
 
 .kira {
   grid-area: kira;
-  .p-kira {
-    max-width: 90%;
+  @include d(m) {
+    max-width: 100%;
   }
 }
 
@@ -124,7 +107,7 @@ img {
   img {
     border: 3px solid #6c509a;
   }
-  .p-patrick {
-    max-width: 97%;
+  @include d(m) {
+    max-width: 100%;
   }
 }

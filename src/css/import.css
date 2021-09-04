@@ -136,86 +136,70 @@ table {
 a {
   text-decoration: none; }
 
-/* line 1, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-*,
-*:before,
-*:after {
-  box-sizing: border-box; }
-
-/* line 7, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-body {
-  background: #cfcfcf;
-  padding: 50px 50px; }
-
-/* line 12, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-h2 {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 1.7rem;
-  line-height: 2rem;
-  margin-bottom: 20px; }
-
-/* line 16, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-h3 {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 1.3rem; }
-
-/* line 20, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-p {
-  font-family: "Barlow Semi Condensed", sans-serif;
-  font-size: 1.1rem;
-  line-height: 1.5rem; }
-
-/* line 24, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-img {
-  border-radius: 50%;
-  width: 100%; }
-
-/* line 29, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 1, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .structure {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-areas: "daniel daniel jonathan kira" "jaenette patrick patrick kira";
   margin: 0 auto;
   max-width: 1440px;
   gap: 24px 30px; }
+  @media screen and (max-width: 1024px) {
+    /* line 1, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
+    .structure {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around; } }
 
-/* line 33, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 5, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .content-structure {
   padding: 30px;
   border-radius: 7px; }
 
-/* line 38, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 10, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .bg-absolute {
   width: 150px;
   z-index: -1;
   position: absolute;
   top: 0%;
-  right: 6%; }
-  /* line 44, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+  right: 0;
+  transform: translateX(-40px); }
+  @media screen and (max-width: 1024px) {
+    /* line 10, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
+    .bg-absolute {
+      width: 145px;
+      transform: translateX(-20px); } }
+  /* line 21, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
   .bg-absolute .bg {
     border-radius: 0;
     width: 100%;
     border: 0 solid; }
 
-/* line 51, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 28, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .flex {
   display: flex;
   align-items: center;
   margin-bottom: 20px; }
+  @media screen and (max-width: 1024px) {
+    /* line 28, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
+    .flex {
+      margin-bottom: 10px; } }
 
-/* line 57, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 37, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .rows {
   margin-left: 20px; }
 
-/* line 61, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 41, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .opacity-50 {
   opacity: 50%; }
 
-/* line 65, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 45, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .opacity-70 {
   opacity: 70%; }
 
-/* line 72, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 52, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .daniel h2,
 .daniel h3,
 .daniel p,
@@ -227,29 +211,33 @@ img {
 .patrick p {
   color: white; }
 
-/* line 79, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 59, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .daniel {
   position: relative;
   z-index: 2;
   grid-area: daniel;
   background: #7541c8; }
-  /* line 84, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+  /* line 64, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
   .daniel img {
     border: 3px solid #a57bd5; }
 
-/* line 89, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 69, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .jonathan {
   grid-area: jonathan;
   background: #48556a; }
-  /* line 92, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+  /* line 72, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
   .jonathan .p-jonathan {
     max-width: 90%; }
+  @media screen and (max-width: 1024px) {
+    /* line 69, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
+    .jonathan {
+      max-width: 100%; } }
 
-/* line 97, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 80, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .kira,
 .jaenette {
   background: white; }
-  /* line 100, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+  /* line 83, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
   .kira h2,
   .kira h3,
   .kira p,
@@ -258,29 +246,76 @@ img {
   .jaenette p {
     color: #19212e; }
 
-/* line 107, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 90, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .kira {
   grid-area: kira; }
-  /* line 109, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-  .kira .p-kira {
-    max-width: 90%; }
+  @media screen and (max-width: 1024px) {
+    /* line 90, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
+    .kira {
+      max-width: 100%; } }
 
-/* line 114, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 97, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .jaenette {
   grid-area: jaenette; }
-  /* line 116, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+  /* line 99, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
   .jaenette h2 {
     max-width: 85%; }
 
-/* line 121, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+/* line 104, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
 .patrick {
   grid-area: patrick;
   background: #19212e; }
-  /* line 124, D:/Testimonials-Grid/src/css/sass/_structure.scss */
+  /* line 107, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
   .patrick img {
     border: 3px solid #6c509a; }
-  /* line 127, D:/Testimonials-Grid/src/css/sass/_structure.scss */
-  .patrick .p-patrick {
-    max-width: 97%; }
+  @media screen and (max-width: 1024px) {
+    /* line 104, D:/Testimonials-Grid/src/css/sass/_3-structure.scss */
+    .patrick {
+      max-width: 100%; } }
+
+/* line 1, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+/* line 7, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+body {
+  background: #cfcfcf;
+  padding: 50px 50px; }
+  @media screen and (max-width: 1024px) {
+    /* line 7, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+    body {
+      padding: 50px 15px; } }
+
+/* line 15, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+h2 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.7rem;
+  line-height: 2rem;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 1024px) {
+    /* line 15, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+    h2 {
+      font-family: "Barlow Semi Condensed", sans-serif;
+      font-size: 1.3rem;
+      line-height: 1.8rem; } }
+
+/* line 22, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+h3 {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.3rem;
+  font-size: 1rem; }
+
+/* line 27, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+p {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5rem; }
+
+/* line 31, D:/Testimonials-Grid/src/css/sass/_3-global.scss */
+img {
+  border-radius: 50%;
+  width: 100%; }
 
 /*# sourceMappingURL=import.css.map */
