@@ -5,7 +5,10 @@ Layout do site de desafios [Frontend Mentor](https://www.frontendmentor.io/chall
 
 A aplicação consiste em uma area de testemunhos, onde é possivel ter o primeiro contato com clientes já contemplados com o serviço.
 
-##
+## Preview
+
+![Visualização do design Web](./doc/design/desktop-preview.jpg)
+
 
 # Tecnologias utilizadas
 
