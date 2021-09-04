@@ -8,7 +8,7 @@ A aplicação consiste em uma area de testemunhos, onde é possivel ter o primei
 
 ## Layout web
 
-![Visualização do design Web](./doc/design/design-preview.jpg)
+![Visualização do design Web](./doc/desktop-preview.jpg)
 
 ##
 
